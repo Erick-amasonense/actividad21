@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://Erick-amasonense.github.io/mkdocs-docs/ejercicio1/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>INSTALACIÓN JEKYLL - Documentación de Ejercicios Erick Daniel</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "INSTALACI\u00d3N JEKYLL";
+        var mkdocs_page_input_path = "ejercicio1.md";
+        var mkdocs_page_url = "/mkdocs-docs/ejercicio1/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Documentación de Ejercicios Erick Daniel
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Documentación Ejercicios | Erick Daniel Encarnación Correa</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">INSTALACIÓN JEKYLL</a>
+    <ul class="current">
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../ejercicio2/">IMPORTACIÓN DE TEMA JEKYLL LAGRANGE</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../ejercicio3/">NETLIFY</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Documentación de Ejercicios Erick Daniel</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">INSTALACIÓN JEKYLL</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="instalacion-jekyll"><strong>INSTALACIÓN JEKYLL</strong></h1>
+<p>Primero actualizamos el sistema.</p>
+<p><img alt="" src="img/act2-1.png" /></p>
+<p>Utilizamos el siguiente comando para instalar <strong>Ruby</strong> y las herramientas necesarias para trabajar con gemas. Durante la instalación se recomienda <strong>no utilizar el usuario root</strong>.</p>
+<p><img alt="" src="img/act2-2.png" /></p>
+<p>Configuramos el entorno para que las gemas se instalen de forma local.</p>
+<p><img alt="" src="img/act2-3.png" /></p>
+<p>Descargamos la gema de <strong>Jekyll</strong>.</p>
+<p><img alt="" src="img/act2-4.png" /></p>
+<p>Con esto hemos completado la instalación local de <strong>Jekyll</strong>.</p>
+<h1 id="sitio-jekyll-minima"><strong>SITIO JEKYLL (MÍNIMA)</strong></h1>
+<h2 id="local"><strong>Local</strong></h2>
+<p>Para crear un sitio web en local con Jekyll utilizamos los siguientes comandos.</p>
+<p><img alt="" src="img/act2-5.png" /></p>
+<p>Accedemos a la carpeta del proyecto y personalizamos los datos que aparecerán en el sitio editando el archivo <strong>_config.yml</strong>.</p>
+<p><img alt="" src="img/act2-6.png" /></p>
+<p><img alt="" src="img/act2-7.png" /></p>
+<p>Guardamos y salimos.</p>
+<h2 id="front-matter-en-jekyll"><strong>Front matter en Jekyll</strong></h2>
+<p>Antes de continuar personalizando páginas y entradas, es importante comprender qué es el <strong>front matter</strong>, ya que Jekyll lo utiliza para interpretar correctamente cada archivo.</p>
+<p>El <em>front matter</em> es un bloque inicial, delimitado por <code>---</code>, que aparece al comienzo de cualquier archivo Markdown del sitio.<br />
+Su función es proporcionar a Jekyll una <strong>serie de parámetros</strong> que describen cómo debe procesarse la página o el post.</p>
+<p>Gracias al front matter podemos indicar, por ejemplo:</p>
+<ul>
+<li>el <strong>layout</strong> que debe usarse,  </li>
+<li>el <strong>título</strong> mostrado en la web,  </li>
+<li>la <strong>fecha</strong> de publicación,  </li>
+<li>la ruta del archivo mediante <strong>permalink</strong>,  </li>
+<li>categorías y etiquetas.</li>
+</ul>
+<p>Sin este bloque, el archivo no sería procesado por Jekyll, teniendo eso en cuenta personalizaré front matter apartado dependiendiendo de mis necesidades en este y los siguientes ejercicios.</p>
+<h2 id="personalizacion-de-paginas"><strong>Personalización de páginas</strong></h2>
+<h3 id="indexmarkdown-y-aboutmarkdown"><strong>index.markdown y about.markdown</strong></h3>
+<p>Primero creo la carpeta <strong>img</strong> para almacenar las imágenes del sitio.</p>
+<p><img alt="" src="img/act2-8.png" /></p>
+<p>Edición de <strong>index.markdown</strong> con:<br />
+<strong>nano index.markdown</strong></p>
+<p><img alt="" src="img/act2-9.png" /></p>
+<p>Guardamos los cambios.</p>
+<p>Ahora envío la imagen a la máquina mediante <strong>scp</strong> (las proximas que necesitemos seran enviadas con este comando).</p>
+<p><img alt="" src="img/act2-10.png" /></p>
+<p>Edición de <strong>about.markdown</strong> mediante:<br />
+<strong>nano about.markdown</strong></p>
+<p><img alt="" src="img/act2-11.png" /></p>
+<h3 id="nueva-pagina"><strong>Nueva página</strong></h3>
+<p>Creo una página adicional llamada <strong>albumes.markdown</strong>, dedicada a los álbumes del grupo.</p>
+<p>Comando: <strong>nano albumes.markdown</strong></p>
+<p><img alt="" src="img/act2-12.png" /></p>
+<p>Guardo los cambios.</p>
+<h3 id="creacion-de-posts"><strong>Creación de posts</strong></h3>
+<p>Creamos los posts con nano.</p>
+<p><img alt="" src="img/act2-13.png" /></p>
+<p>Guardo este primer post y creo dos más.</p>
+<p><img alt="" src="img/act2-14.png" /></p>
+<h3 id="prueba-del-sitio"><strong>Prueba del sitio</strong></h3>
+<p>Probamos el funcionamiento iniciando el servidor con la IP.</p>
+<p><img alt="" src="img/act2-15.png" /></p>
+<p>El sitio funciona correctamente.</p>
+<p><img alt="" src="img/act2-16.png" /></p>
+<h1 id="github-pages"><strong>GITHUB PAGES</strong></h1>
+<p>Procedemos ahora con el despliegue mediante <strong>GitHub Pages</strong>.</p>
+<p>Convertimos la carpeta del sitio en un repositorio usando <strong>git init</strong>, añadimos el repositorio remoto y creamos la rama <strong>gh-pages</strong>.</p>
+<p><img alt="" src="img/act2-17.png" /></p>
+<p>Finalmente subimos el repositorio local al remoto.</p>
+<p><img alt="" src="img/act2-18.png" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Documentación Ejercicios | Erick Daniel Encarnación Correa"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ejercicio2/" class="btn btn-neutral float-right" title="IMPORTACIÓN DE TEMA JEKYLL LAGRANGE">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../ejercicio2/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
